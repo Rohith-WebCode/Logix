@@ -43,8 +43,6 @@ let current = 0;
 
  updateTestimonial()
   
- console.log(quoteEl);
- 
  
   setInterval(updateTestimonial,5000)
 
@@ -62,6 +60,7 @@ let current = 0;
   }
 
 
+
   // animation
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -76,3 +75,20 @@ let current = 0;
     document.querySelectorAll('.fade-in-up, .fade-in-side, .fade-in-leftside, .fade-in-top, .fade-in-scale').forEach(el => {
       observer.observe(el);
     });
+
+
+    window.addEventListener("scroll",()=>{
+
+      const section  = document.getElementById('truck-section')
+      const truck = document.querySelector('.truck-img');
+      const box = document.querySelector('.box-img');
+      
+      const sectionTop  = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (sectionTop < windowHeight - 100){
+        truck.classList.add('truck')
+        box.classList.add('box')
+      }
+
+    })

@@ -109,17 +109,9 @@ input[type=number] {
     transform: scale(1);
   }
 
-  .truck {
-    animation: truckIn 4s ease-out forwards, truckOut 2s ease-in 6s forwards;
-  }
-
-  .box {
-    animation: liftBox 1s ease-in 4s forwards,boxOut 1.2s ease-in 6s forwards;
-  }
-
-
-
-  @keyframes truckIn {
+  
+  
+    @keyframes truckIn {
     0% { transform: translateX(-500%); }
     /* 60% { transform: translateX(0%); } */
     100% { transform: translateX(-18%); }
@@ -149,6 +141,15 @@ input[type=number] {
       transform: translateY(-10px);
     }
   }
+
+   .truck {
+    animation: truckIn 4s ease-out forwards, truckOut 2s ease-in 6s forwards;
+  }
+
+  .box {
+    animation: liftBox 1s ease-in 4s forwards,boxOut 1.2s ease-in 6s forwards;
+  }
+
 
 /* @keyframes shake {
   0% { transform: translateY(0); }
