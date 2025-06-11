@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logix</title>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dgrxeqayx/image/upload/v1749624956/icon_lprcne.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="">
+ <section class="bg-[#f6f6f6]">
+  <div class="px-14 md:px-20">
+    <div class="pt-5 flex justify-between text-center">
+      <img src="./Image/Logo.png"/ class="w-20 md:w-32">
+      
+      <div class="hidden md:flex justify-center text-sm ">
+        <p class="px-2 cursor-pointer">Home</p>
+        <p class="px-2 cursor-pointer">About Us</p>
+        <p class="px-2 cursor-pointer">Pages</p>
+        <p class="px-2 cursor-pointer">Services</p>
+        <p class="px-2 cursor-pointer">Contact Us</p>
+      </div>
+
+
+
+      <div class="flex justify-center md:gap-2">
+        <div class="relative mr-5 md:mr-5">
+          <img src="./Image/cart.png" class="w-5 "/>
+          <div class="absolute top-[-.1rem] right-0 left-5">
+          <p class="bg-[#f84736] rounded-full text-neutral-50 w-4 text-xs">0</p>
+          </div>
+        </div>
+        <div>
+          <!-- Mobile navbar menu-->
+          <img src="./Image/menu.png" class="w-6 md:hidden cursor-pointer" onclick="toggleMenu()"/>
+        </div>
+        <div class="group flex gap-2 transition-all">
+          <p class="text-sm hidden md:block">Track your order</p>
+          <img src="./Image/right-arrow.png" class="w-6 h-5 hidden lg:block transform transition-transform duration-300 group-hover:translate-x-1"/> 
+        </div>
+    </div>
+  
+
+    </div>
+    <hr>
+  </div>
+        <!-- Mobile navbar -->
+  <div id="mobileMenu" class="fixed px-14 top-13 left-0 w-full h-[18rem] bg-white transform hidden flex-col md:hidden items-start justify-center gap-6 transition-transform duration-500 z-50 shadow-2xl">
+    <div class="text-sm flex flex-col items-start gap-4">
+    <p class="px-2 cursor-pointer " onclick="toggleMenu()">Home</p>
+    <p class="px-2 cursor-pointer" onclick="toggleMenu()">About Us</p>
+    <p class="px-2 cursor-pointer" onclick="toggleMenu()">Pages</p>
+    <p class="px-2 cursor-pointer" onclick="toggleMenu()">Services</p>
+    <p class="px-2 cursor-pointer" onclick="toggleMenu()">Contact Us</p>
+    <p class="px-2 cursor-pointer" onclick="toggleMenu()">Track your order</p>
+      </div>
+    </div>
+
+    <div class="px-14 md:px-20 py-15 lg:flex justify-center">
+      <div class="fade-in-up">
+        <h1 class="text-5xl md:text-[70px] lg:text-[90px] font-normal lg::leading-[10rem]">Efficient <span class="text-[#f84736] font-bold">Logistics</span> solutions for you.</h1>
+      </div>
+
+      <div class="pt-7 fade-in-side">
+        <p class="text-lg md:text-2xl font-medium lg:mx-20">Tailored <span class="text-[#f84736]">transportation solutions</span> to meet your unique needs.</p>
+        <button type="button" class="lg:mx-20 border-[2px] rounded-md px-5 text-sm py-2 mt-5 flex items-center justify-center gap-1 cursor-pointer group transition-all">Get in touch <img src="./Image/right-arrow.png" class="w-6 h-5 transform transition-transform duration-300 group-hover:translate-x-1"/></button>
+      </div>
+
+    </div>
+
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748156844/freepik__enhance__3620_wei5jq.png" class="h-80 lg:h-[35rem] w-screen object-cover"/>
+
+    <div class="px-20 md:px-40 lg:px-90 py-25 fade-in-up">
+      <div class="flex items-center gap-1 py-4 ">
+        <img src="./Image/right-arrow 2.png" class="w-3 fade-in-leftside"/>
+        <p class="text-sm font-medium">About us</p>
+      </div>
+      <p class="text-base md:text-lg font-semibold ">We specialize in providing innovative logistics solutions tailored to meet the unique needs of our clients. With a team of <span class="text-[#f84736]">seasoned professionals and state-of-the-art </span>
+        technology, we are dedicated to optimizing your supply lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+   
+        <div class="py-8 md:flex items-center gap-5 md:gap-10">
+          <div class="md:pr-8 pb-5">
+             <p class="text-4xl font-medium py-3">28k</p>
+             <p class="text-xs md:text-sm">Completed shipments</p>
+          </div>
+            <div class="md:h-20 w-px bg-gray-300"></div>
+          <div class="md:pr-8 pb-5">
+             <p class="text-4xl font-medium py-3">13+</p>
+             <p class="text-xs md:text-sm">Years of experience</p>
+          </div>
+            <div class="md:h-20 w-px bg-gray-300"></div>
+          <div class="md:pr-8">
+             <p class="text-4xl font-medium py-3">220+</p>
+             <p class="text-xs md:text-sm">Team members</p>
+          </div>
+        </div>
+      </div>
+ </section>
+
+<section class="lg:flex">
+  <div class="px-14 md:px-20  py-15">
+    <div class="">
+        <div class="flex items-center gap-1 py-4">
+        <img src="./Image/right-arrow 2.png" class="w-3 fade-in-leftside"/>
+        <p class="text-sm font-medium">Our services</p>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-semibold">We offer unparalleled</h1>
+      <p class="text-xs pt-5">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+      <button type="button" class=" border-[2px] rounded-md px-5 text-sm py-2 mt-5 flex items-center justify-center gap-1 cursor-pointer group transition-all">More revices  <img src="./Image/right-arrow.png" class="w-6 h-5 transform transition-transform duration-300 group-hover:translate-x-1"/></button>
+
+       <!-- Service Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-10 fade-in-up">
+         <div class="">
+          <div class="flex items-center space-x-4">
+            <img src="./Image/electric-tram.png" class="w-16"/>
+           <div>
+             <h3 class="font-semibold text-lg">Rail freight<br>transportation</h3>
+           </div>
+
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod dolore magna aliqua.</p>
+          </div>
+          
+        </div>
+         <div class="">
+          <div class="flex items-center space-x-4">
+            <img src="./Image/cruise.png" class="w-16"/>
+           <div>
+             <h3 class="font-semibold text-lg">Ocean transportation</h3>
+           </div>
+
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod dolore magna aliqua.</p>
+          </div>
+          
+        </div>
+         <div class="pt-8">
+          <div class="flex items-center space-x-4">
+            <img src="./Image/plane.png" class="w-16"/>
+           <div>
+             <h3 class="font-semibold text-lg">Air freight<br>transportation</h3>
+           </div>
+
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod dolore magna aliqua.</p>
+          </div>
+          
+        </div>
+         <div class="pt-8">
+          <div class="flex items-center space-x-4">
+            <img src="./Image/truck.png" class="w-16"/>
+           <div>
+             <h3 class="font-semibold text-lg">Road transportation</h3>
+           </div>
+
+          </div>
+          <div>
+            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod dolore magna aliqua.</p>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+
+  </div>
+
+ <div class="w-full lg:w-screen lg:h-screen">
+    <img
+      src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748328068/freepik__enhance__99293_kki39b.png"
+      alt="Ship"
+      class="w-screen h-[35rem] md:h-[85rem] lg:h-[47rem] object-cover object-top lg:-mt-14"
+    />
+  </div>
+</section>
+
+<section class="bg-[#07252d] pb-8">
+
+<div class="py-28 md:py-0 md:flex items-center relative overflow-hidden ">
+  <div>
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748359739/666a60e702231dddd22ab63e_tanker-01_fyhvxl.png" class="hidden md:block w-full -ml-80"/>
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748359751/box-01_nb1b20.png" class="hidden md:block absolute right-0  xl:right-35  bottom-1 transform -translate-x-1/2 w-60"/>
+  </div>
+  <img src="./Image/right-arrow 2.png" class="w-10 md:w-13 absolute left-1/2 top-12 md:top-[35%] transform -translate-x-1/2 fade-in-leftside"/>
+  <div class="md:absolute left-0 right-0 top-64 text-center fade-in-leftside">
+      <h2 class="text-3xl md:text-[4rem]  leading-tight text-neutral-50">
+        Get started with expert <br />
+        logistics <span class="text-[#ff4e4e] font-bold">solutions!</span>
+      </h2>
+      <div class="mt-6">
+      <button type="button" class="text-neutral-50 border-[2px] rounded-md px-5 text-sm py-2 mt-5 inline-flex items-center justify-center gap-1 cursor-pointer group transition-all">Contact us<img src="./Image/white right-arrow.png" class="w-6 h-5 transform transition-transform duration-300 group-hover:translate-x-1"/></button>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="bg-[#f6f6f6]">
+  <div class="flex flex-col lg:flex-row">
+    <div class="">
+      <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748403053/67567d131c816c167fb32902_enquiry-single-img_mpuvp1.avif" class="object-cover w-full h-[500px] lg:h-full"/>
+    </div>
+
+    <div class="p-14 md:p-20">
+        <div class="flex items-center gap-1 py-4">
+        <img src="./Image/right-arrow 2.png" class="w-3 fade-in-leftside"/>
+        <p class="text-sm font-medium">Get in touch with us</p>
+      </div>
+       <h1 class="text-3xl md:text-4xl font-semibold">Need to make an inquiry?</h1>
+       <p class="text-xs pt-6 text-gray-600">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+
+       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16">
+
+        <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">Name*</label>
+          <input type="text" placeholder="Your name" class="border rounded-md text-xs p-3 "/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">Phone*</label>
+          <input type="number" placeholder="Your number" class="border rounded-md text-xs p-3 "/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">Email*</label>
+          <input type="email" placeholder="Your email" class="border rounded-md text-xs p-3 "/>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">Freight type*</label>
+          <select class="border rounded-md text-gray-600 text-xs p-3 ">
+            <option class="">Select freight type</option>
+            <option class="">Airlines</option>
+            <option class="">Train Services</option>
+            <option class="">Courier and parcel delivery</option>
+            <option class="">Warehousing</option>
+            <option class=""> Road transportation</option>
+          </select>
+        </div>
+
+           <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">Load*</label>
+          <select class="border rounded-md text-gray-600 text-xs p-3 ">
+            <option class="">Select load</option>
+            <option class="">Flatbed load</option>
+            <option class="">Container load</option>
+            <option class="">Dry van load</option>
+          </select>
+        </div>
+        <div class="flex flex-col">
+          <label class="text-gray-600 text-sm pb-2">DIST (Miles)*</label>
+            <select class="border rounded-md text-gray-600 text-xs p-3 ">
+            <option class="">Select miles</option>
+            <option class="">0-500</option>
+            <option class="">500-1000</option>
+            <option class="">1000-1500</option>
+          </select>
+        </div>
+       </div>
+
+       <div class="flex pt-8">
+         <input type="checkbox" class="mr-2"/><p class="text-gray-600 text-sm">By clicking on this button, I agree to the process</p>
+       </div>
+        <button type="button" class="text-neutral-50 border-[2px] rounded-lg px-10 text-sm py-3 mt-5 items-center justify-center cursor-pointer bg-[#ff4e4e] hover:text-black hover:bg-white">Submit request</button>
+    </div>
+
+  </div>
+
+    <h1 class="text-2xl text-center pt-12 font-medium"><span class="text-[#ff4e4e] font-semibold">150,000+ </span>Trusted worldwide for comprehensive freight <br>solutions across the globe</h1>
+
+<div class="scroll-container overflow-hidden w-full flex py-20">
+  <div class="scroll-track flex ">
+    <!-- Original Icons -->
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448410/Buenos_Aires-black_odgawo.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448428/file_kbieqq.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448396/Norway-black_eh4fj8.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448417/London-black_dq09bw.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448389/sweden-black_xzhivc.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448376/denmark-black_dsxtyy.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+  </div>
+  <div class="scroll-track flex ">
+    <!-- Original Icons -->
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448410/Buenos_Aires-black_odgawo.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448428/file_kbieqq.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448396/Norway-black_eh4fj8.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448417/London-black_dq09bw.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448389/sweden-black_xzhivc.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448376/denmark-black_dsxtyy.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+  </div>
+  <div class="scroll-track flex ">
+    <!-- Original Icons -->
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448410/Buenos_Aires-black_odgawo.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448428/file_kbieqq.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448396/Norway-black_eh4fj8.svg" class=w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448417/London-black_dq09bw.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448389/sweden-black_xzhivc.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+    <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748448376/denmark-black_dsxtyy.svg" class="w-32 md:w-40 mx-8 shrink-0" />
+  </div>
+</div>
+</section>
+
+
+<section class="px-14 xl:px-56 md:py-20 flex flex-col lg:flex-row items-start lg:items-center lg:gap-8">
+  <div class="pb-50 py-18 flex-1 overflow-hidden relative w-full h-[700px] lg:h-[500px] fade-in-leftside">
+        <div class="flex items-center gap-1 py-4">
+      <img src="./Image/right-arrow 2.png" class="w-3 "/>
+        <p class="text-sm font-medium">Testimonial</p>
+      </div>
+       <h1 class="text-3xl md:text-4xl font-medium">What our customer say</h1>
+       
+       <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748502885/676fa38f4b863915ae95325f_quote-skin_zduuq2.svg" class="my-10 w-12">
+
+      <div class="absolute transition-all duration-700 ease-in-out transform translate-x-0 opacity-100">
+      <p class="text-sm md:text-xl italic text-neutral-600 mb-4" id="quote">
+      "Loading testimonial..."
+      </p>
+    <p class="font-semibold" id="author">Author Name</p>
+    <p class="text-sm text-neutral-600" id="position">Position</p>
+       </div> 
+      </div>
+      
+  <div class="flex-shrink-0 w-full lg:w-[25rem] h-auto lg:h-[30rem] relative">
+    <img id="testimonialImage" src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748495205/677fbc1fa17117c799ada4c1_Testimonial-image1_tqotbe.avif" alt="Customer photo" class="w-[500px] xl:w-full lg:h-full shadow-lg transition-opacity duration-500 ease-in-out fade-in-scale" />
+  </div>
+</section>
+
+<div class="bg-[#ff4e4e] w-full overflow-hidden my-8">
+<div class="py-9 flex gap-12 items-center  whitespace-nowrap scroll">
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Transport & Logistics</P>
+      </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Transport Solutions</P>
+     </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+ 
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Stay on Track</P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Travel Made Easy</P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Modern Transport </P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+    
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Transport & Logistics</P>
+      </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Transport Solutions</P>
+     </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+ 
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Stay on Track</P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Travel Made Easy</P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/>
+  <div class="">
+    <P class="text-neutral-50 text-2xl font-medium">Modern Transport </P>
+  </div>
+    <img src="./Image/w-right-arrow.png" class="w-5 h-4"/> 
+</div>
+</div>
+
+
+<section class="px-14 xl:px-56 mb-28 text-center">
+        <div class="flex justify-center items-center gap-1 py-4">
+        <img src="./Image/right-arrow 2.png" class="w-3 fade-in-leftside"/>
+        <p class="text-sm font-medium">From blog</p>
+      </div>
+       <h1 class="text-3xl md:text-4xl font-medium">Read our latest posts</h1>
+   <div class="flex flex-col md:flex-row items-center gap-8 pt-8 fade-in-up">
+
+    <div class="text-start">
+      <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748619895/677fc15f62a3787cae1e007b_blog-img06_bghakc.avif" class="w-85 h-auto"/>
+      <p class="text-sm italic text-neutral-600">October 5, 2025 / Transport / Robert white</p>
+      <h1 class="text-base md:text-xl py-3 font-medium">Smart cities and transportation</h1>
+
+    </div>
+    <div class="text-start">
+      <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748619928/677fbe7e06252d1756f8ab24_blog-img05_qmnz0n.avif" class="w-85 h-auto"/>
+      <p class="text-sm italic text-neutral-600">October 5, 2025 / Transport / Robert white</p>
+      <h1 class="text-base md:text-xl py-3 font-medium">Smart cities and transportation</h1>
+
+    </div>
+    <div class="text-start">
+      <img src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1748619961/677fbea949ace90fc033bc58_blog-img07_acemwp.avif" class="w-85 h-auto"/>
+      <p class="text-sm italic text-neutral-600">October 5, 2025 / Transport / Robert white</p>
+      <h1 class="text-base md:text-xl py-3 font-medium">Smart cities and transportation</h1>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="bg-[#07252d] relative w-full">
+<div class="absolute -top-20 left-0 right-0 md:mb-22  overflow-hidden">
+  <div class="flex justify-end items-end">
+    <!-- Truck -->
+
+  <img
+    src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1749531670/676fbe0accb58f6479bff387_electric-forklift_r7hdtu.avif"
+    alt="truck"
+    class="truck w-48 md:w-70 "
+  />
+  <img
+    src="https://res.cloudinary.com/dgrxeqayx/image/upload/v1749531663/675d09654c85222376b3e4cf_box-img_fnspkf.avif"
+    alt="box"
+    class="box w-20 md:w-30 absolute "
+  />
+  </div>
+
+</div>
+
+  <div class="px-14 xl:px-56 md:pt-8">
+    <div class="flex flex-col lg:flex-row justify-between pt-20 gap-10 lg:gap-40">
+      <div class="flex flex-col md:flex-row gap-11 justify-between md:w-[50%]">
+    <div class="text-neutral-50">
+        <p class="text-base pb-6">pages</p>
+        <ul class="text-[#ffffffb3] text-xs flex flex-col gap-3">
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Team</li>
+          <li>Blog classic</li>
+        </ul>
+      </div>
+      <div class="text-neutral-50">
+        <p class="text-base pb-6">Useful links</p>
+        <ul class="text-[#ffffffb3] text-xs flex flex-col gap-3">
+          <li>Pricing details</li>
+          <li>Career details</li>
+          <li>Service details</li>
+          <li>Team details</li>
+          <li>Blog details</li>
+        </ul>
+      </div>
+      </div>
+     
+      <div class="text-neutral-50 items-start w-full">
+       <h1 class="text-xl">Subscribe to our newsletter for insights,<br>tips, and exclusive offers.</h1>
+        <div class="flex flex-row gap-4 md:gap-7 my-5 h-10">
+        <input type="text" placeholder="Enter your email" class="w-full md:w-[70%] lg:w-full  border rounded-md text-xs p-3 border-[#576f75]"/>
+        <button type="button" class="text-neutral-50 border-black rounded-lg px-5 md:px-10 text-xs py-3  items-center justify-center cursor-pointer bg-[#ff4e4e] hover:text-black hover:bg-white">Submit</button>
+        </div>
+        <div onclick="toggleCheckbox(this)" class="flex items-center cursor-pointer select-none">
+        <div class="w-5 h-5 border-2 border-gray-700 rounded-full flex items-center justify-center transition-all duration-200 checkbox-box mr-4">
+          <!-- checkmark will be inserted here with JS -->
+        </div>
+      <p class="text-[#ffffffb3] text-xs">By subscribing you accept our privacy policy & terms of service</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-8">
+           <button type="button" class="text-neutral-50 border border-[#576f75] rounded-lg px-7 text-xs py-2 items-center justify-center cursor-pointer bg-transparent hover:text-black hover:bg-white">Facebook</button>
+           <button type="button" class="text-neutral-50 border border-[#576f75] rounded-lg px-7 text-xs py-2 items-center justify-center cursor-pointer bg-transparent hover:text-black hover:bg-white">Twitter</button>
+           <button type="button" class="text-neutral-50 border border-[#576f75] rounded-lg px-7 text-xs py-2 items-center justify-center cursor-pointer bg-transparent hover:text-black hover:bg-white">Dribbble</button>
+           <button type="button" class="text-neutral-50 border border-[#576f75] rounded-lg px-7 text-xs py-2 items-center justify-center cursor-pointer bg-transparent hover:text-black hover:bg-white">LinkedIn</button>
+      </div>
+      </div>
+    </div>
+      <hr class="text-[#ffffffb3]">
+
+      <div class="flex flex-col items-start lg:flex-row justify-between  py-5">
+        <div class="flex items-center gap-1 lg:gap-5 group transition-all">
+          <h1 class="text-3xl text-neutral-50">Be part of our team</h1>
+           <img src="./Image/white right-arrow.png" class="w-6 h-5 text-neutral-50 transform transition-transform duration-300 group-hover:translate-x-1"/>
+        </div>
+
+        <div class="text-neutral-50 py-4">
+        <p class="text-base pb-6">Email</p>
+        <ul class="text-[#ffffffb3] text-xs flex flex-col gap-3">
+          <li>Admin.support@example.com</li>
+          <li class="text-neutral-50">+1 123 4563 7654</li>
+        </ul>
+
+      </div>
+        <div class="text-neutral-50 py-4">
+        <p class="text-base pb-6">Location</p>
+        <ul class="text-[#ffffffb3] text-xs flex flex-col gap-3">
+          <li>HS B26, Horton Ford Rd, Eidson, TN, 37731</li>
+        </ul>
+
+      </div>
+  </div>
+
+    <hr class="text-[#ffffffb3]">
+
+    <div class="py-5 flex flex-col md:flex-row gap-6 justify-center">
+      <p class="text-xs text-[#ffffffb3]">Logix @ 2025 designed by Rohith</p>
+      <div class="flex gap-4">
+        <p class="text-xs text-[#ffffffb3]">Changelog</p>
+        <p class="text-xs text-[#ffffffb3]">Style Guide</p>
+        <p class="text-xs text-[#ffffffb3]">Licences</p>
+      </div>
+    </div>
+
+</section>
+
+
+</body>
+ <script src="Script.js"></script>
+</html>

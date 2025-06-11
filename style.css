@@ -1,0 +1,160 @@
+body{
+    font-family: "Poppins", sans-serif;
+      font-weight: 400;
+}
+   /* body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    } */
+
+.hidden-menu {
+  transform: translatey(-100%);
+}
+.visible-menu {
+  transform: translatey(0);
+}
+
+.scroll-track {
+  width: max-content;
+  display: flex;
+  animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.scroll {
+  animation: marquee 15s linear infinite;
+} 
+
+    /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+ .fade-in-up {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-side {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in-side.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+  .fade-in-leftside {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in-leftside.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+ .fade-in-top {
+    opacity: 0;
+    transform: translateY(-40px); /* Move from top */
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in-top.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+    .fade-in-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in-scale.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .truck {
+    animation: truckIn 4s ease-out forwards, truckOut 2s ease-in 6s forwards;
+  }
+
+  .box {
+    animation: liftBox 1s ease-in 4s forwards,boxOut 1.2s ease-in 6s forwards;
+  }
+
+
+
+  @keyframes truckIn {
+    0% { transform: translateX(-500%); }
+    /* 60% { transform: translateX(0%); } */
+    100% { transform: translateX(-18%); }
+  }
+
+  @keyframes truckOut {
+    0% { transform: translateX(-18%); }
+    100% { transform: translateX(150%); }
+  }
+  @keyframes boxOut {
+    0% { transform: translateX(2); }
+    100% { transform: translateX(150%); }
+  }
+
+  @keyframes liftBox {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    20% { 
+      transform: translateY(-1px) rotate(-4deg); 
+    }
+     60% { 
+      transform: translateY(-5px) rotate(-2deg); 
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+/* @keyframes shake {
+  0% { transform: translateY(0); }
+ 
+  40% { transform: translateY(2px) rotate(2deg); }
+ 
+  80% { transform: translateY(1px) rotate(1deg); }
+  100% { transform: translateY(0); }
+} */
